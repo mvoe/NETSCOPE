@@ -10,6 +10,19 @@ class ArgumentParser:
         )
 
         parser.add_argument(
+            '-v', '--version',
+            action='version',
+            version='NetScope 1.0',
+            help='Show the version of the program and exit'
+        )
+
+        parser.add_argument(
+            '-o', '--options',
+            action='store_true',
+            help='Display the menu options'
+        )
+
+        parser.add_argument(
             '-p', '--portscan',
             type=str,
             help= (
@@ -18,3 +31,5 @@ class ArgumentParser:
                 "The results will be displayed with port numbers and service names, if available."
             )
         )
+
+        return parser
