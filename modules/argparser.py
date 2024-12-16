@@ -32,4 +32,10 @@ class ArgumentParser:
             )
         )
 
+        parser.add_argument(
+            '-t', '--traceroute',
+            type=str,
+            help="Perform traceroute to the specified IP address or hostname"
+        )
+
         return parser
