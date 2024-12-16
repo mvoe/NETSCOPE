@@ -4,6 +4,7 @@ from modules.header import print_logo, print_separator, display_menu
 from modules.argparser import ArgumentParser
 from modules.portscan import port_scan
 from  modules.traceroute import performing_traceroute
+from modules.ping import ping_test
 
 
 console = Console()
@@ -18,6 +19,8 @@ def main():
         port_scan(args.portscan)
     elif args.traceroute:
         performing_traceroute(args.traceroute)
+    elif args.ping:
+        ping_test(args.ping)
     else:
         print_logo()
         print_separator()

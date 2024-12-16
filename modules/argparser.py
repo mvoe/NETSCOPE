@@ -38,4 +38,10 @@ class ArgumentParser:
             help="Perform traceroute to the specified IP address or hostname"
         )
 
+        parser.add_argument(
+            '-ping',
+            type=str,
+            help="Hostname or IP address to ping"
+        )
+
         return parser
