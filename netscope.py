@@ -1,7 +1,7 @@
 from textwrap import dedent
 from rich.console import Console
 from rich.text import Text
-from modules.header import print_logo, print_separator, print_menu_option
+from modules.header import print_logo, print_separator, print_menu_option, display_menu
 from modules.argparser import ArgumentParser
 
 
@@ -12,7 +12,7 @@ def main():
     args = parser.parse_args()
 
     if args.options:
-        print_menu_option()
+        display_menu()
     else:
         print_logo()
         print_separator()
