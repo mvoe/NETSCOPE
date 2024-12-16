@@ -49,5 +49,10 @@ class ArgumentParser:
             type=str,
             help="Perform DNS lookup for the given hostname or IP address"
         )
+        parser.add_argument(
+            '-who', '--whois',
+            type=str,
+            help="Perform WHOIS lookup for the given hostname or IP address"
+        )
 
         return parser

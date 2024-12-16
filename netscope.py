@@ -6,6 +6,7 @@ from modules.portscan import port_scan
 from  modules.traceroute import performing_traceroute
 from modules.ping import ping_test
 from modules.dnslookup import dns_lookup
+from modules.whois_lookup import perform_whoislookup
 
 
 console = Console()
@@ -24,6 +25,8 @@ def main():
         ping_test(args.ping)
     elif args.dnslookup:
         dns_lookup(args.dnslookup)
+    elif args.whois:
+      perform_whoislookup(args.whois)
     else:
         print_logo()
         print_separator()
