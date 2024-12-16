@@ -44,4 +44,10 @@ class ArgumentParser:
             help="Hostname or IP address to ping"
         )
 
+        parser.add_argument(
+            '-dns', '--dnslookup',
+            type=str,
+            help="Perform DNS lookup for the given hostname or IP address"
+        )
+
         return parser

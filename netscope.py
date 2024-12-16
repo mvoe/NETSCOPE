@@ -5,6 +5,7 @@ from modules.argparser import ArgumentParser
 from modules.portscan import port_scan
 from  modules.traceroute import performing_traceroute
 from modules.ping import ping_test
+from modules.dnslookup import dns_lookup
 
 
 console = Console()
@@ -21,6 +22,8 @@ def main():
         performing_traceroute(args.traceroute)
     elif args.ping:
         ping_test(args.ping)
+    elif args.dnslookup:
+        dns_lookup(args.dnslookup)
     else:
         print_logo()
         print_separator()
