@@ -6,16 +6,13 @@ console = Console()
 
 def dns_lookup(hostname):
     try:
-        # Check if the input is an IP address or a hostname
         if hostname.replace('.', '').isdigit():
-            # Perform reverse DNS lookup
             domain = socket.gethostbyaddr(hostname)
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             console.print(f"Reverse DNS lookup for IP [bold]{hostname}[/bold]: {domain[0]}", style="bold magenta")
             console.print(f"DNS Lookup initiated at [bold]{current_time}[/bold]", style='magenta')
 
         else:
-            # Perform normal DNS lookup
             ip_addresses = socket.gethostbyname_ex(hostname)[2]
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             console.print(f"DNS lookup for hostname {hostname}:", style='bold magenta')
