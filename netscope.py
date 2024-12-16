@@ -1,8 +1,9 @@
 from textwrap import dedent
 from rich.console import Console
-from rich.text import Text
-from modules.header import print_logo, print_separator, print_menu_option, display_menu
+from modules.header import print_logo, print_separator, display_menu
 from modules.argparser import ArgumentParser
+from modules.portscan import port_scan
+from  modules.traceroute import performing_traceroute
 
 
 console = Console()
@@ -13,6 +14,10 @@ def main():
 
     if args.options:
         display_menu()
+    elif args.portscan:
+        port_scan(args.portscan)
+    elif args.traceroute:
+        performing_traceroute(args.traceroute)
     else:
         print_logo()
         print_separator()
