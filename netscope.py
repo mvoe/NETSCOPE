@@ -10,6 +10,7 @@ from modules.whois_lookup import perform_whoislookup
 from modules.reverseDNSLookUp import reverse_dns_lookup
 from modules.ipgeolocation import ip_geolocation
 from modules.sslcertificatecheck import ssl_certificate_check
+from modules.subdomainscanning import get_subdomain
 
 
 console = Console()
@@ -36,6 +37,8 @@ def main():
       ip_geolocation(args.ipgeolocation)
     elif args.sslcheck:
         ssl_certificate_check(args.sslcheck)
+    elif args.subdomainscan:
+        get_subdomain(args.subdomainscan)
     else:
         print_logo()
         print_separator()

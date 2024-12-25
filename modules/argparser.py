@@ -79,4 +79,10 @@ class ArgumentParser:
             help="Perform an SSL certificate check for the specified domain (e.g., google.com)."
         )
 
+        parser.add_argument(
+            '-sub', '--subdomainscan',
+            type=str,
+            help="Scan for subdomains of the specified domain (e.g., example.com)."
+        )
+
         return parser
