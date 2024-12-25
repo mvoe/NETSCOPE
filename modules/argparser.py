@@ -67,4 +67,10 @@ class ArgumentParser:
             )
         )
 
+        parser.add_argument(
+            '-ip', '--ipgeolocation',
+            type=str,
+            help='Perform IP Geolocation lookup. Example: -g <IP or hostname>'
+        )
+
         return parser
