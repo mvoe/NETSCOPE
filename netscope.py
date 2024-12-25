@@ -7,6 +7,7 @@ from  modules.traceroute import performing_traceroute
 from modules.ping import ping_test
 from modules.dnslookup import dns_lookup
 from modules.whois_lookup import perform_whoislookup
+from modules.reverseDNSLookUp import reverse_dns_lookup
 
 
 console = Console()
@@ -24,9 +25,11 @@ def main():
     elif args.ping:
         ping_test(args.ping)
     elif args.dnslookup:
-        dns_lookup(args.dnslookup)
+        reverse_dns_lookup(args.dnslookup)
     elif args.whois:
       perform_whoislookup(args.whois)
+    elif args.reversedns:
+      reverse_dns_lookup(args.reversedns)
     else:
         print_logo()
         print_separator()

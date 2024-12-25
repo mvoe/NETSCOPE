@@ -56,4 +56,15 @@ class ArgumentParser:
             help="Perform WHOIS lookup for the given hostname or IP address"
         )
 
+        parser.add_argument(
+            '-r', '--reversedns',
+            type=str,
+            help = (
+                "Perform a Reverse DNS lookup for the specified IP address. "
+                "This will resolve the provided IP address into its associated domain name (if available). "
+                "For example, use: 'python3 netscope.py -r <IP>' to initiate the lookup. "
+                "The result will display the hostname associated with the given IP address."
+            )
+        )
+
         return parser
