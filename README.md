@@ -1,11 +1,14 @@
 # NETSCOPE - Network Analysis Tool
-
-![NETSCOPE Logo](images/logo.png)
-
+            _   __     __  _____                     
+           / | / /__  / /_/ ___/_________  ____  ___ 
+          /  |/ / _ \/ __/\__ \/ ___/ __ \/ __ \/ _ \ 
+         / /|  /  __/ /_ ___/ / /__/ /_/ / /_/ /  __/
+        /_/ |_/\___/\__//____/\___/\____/ .___/\___/ 
+                           [v1.0]      /_/ 
+                           
 NETSCOPE is a powerful and versatile network analysis tool designed for performing various network-related tasks, such as port scanning, traceroute, DNS lookups, ping tests, and more. It is built with Python and leverages multiple modules to offer a comprehensive set of features for network diagnostics and security assessments.
 
 ## Features
-![NETSCOPE Menu](images/menu.png)
 
 - **Port Scan**: Scan all valid ports (1 to 65535) on a specified target to identify open ports and associated services.
 - **Traceroute**: Trace the network route taken by packets to reach the target IP and identify network hops and delays.
