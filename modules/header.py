@@ -44,10 +44,7 @@ def display_menu():
         6: 'Reverse DNS Lookup',
         7: 'IP Geolocation',
         8: 'SSL Certificate Check',
-        9: 'Subdomain Scanning',
-        10: 'Vulnerability Scanning',
-        11: 'Firewall Check',
-        12: 'Network Stress Testing'
+        9: 'Subdomain Scanning'
     }
 
     half = len(menu_options) // 2

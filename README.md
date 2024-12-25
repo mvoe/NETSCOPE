@@ -16,9 +16,6 @@ NETSCOPE is a powerful and versatile network analysis tool designed for performi
 - **IP Geolocation**: Get the geographical location of an IP address.
 - **SSL/TLS Certificate Check**: Validate SSL/TLS certificates for secure connections.
 - **Subdomain Scanning**: Scan for common subdomains of a given domain to discover potential hidden services.
-- **Vulnerability Scanning**: Scan for potential vulnerabilities on a given network.
-- **Firewall Check**: Check for firewall configurations and restrictions on a target.
-- **Network Stress Testing**: Test the network's ability to handle high traffic loads.
 
 ## Installation
 
