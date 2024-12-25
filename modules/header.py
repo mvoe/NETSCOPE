@@ -43,13 +43,11 @@ def display_menu():
         5: 'WHOIS Lookup',
         6: 'Reverse DNS Lookup',
         7: 'IP Geolocation',
-        8: 'ARP-Spoofing Detection',
-        9: 'Bandwidth Monitoring',
-        10: 'Packet Sniffing',
+        8: 'SSL Certificate Check',
+        9: 'Subdomain Scanning',
+        10: 'Vulnerability Scanning',
         11: 'Firewall Check',
-        12: 'SSL/TLS Certificate Check',
-        13: 'Vulnerability Scanning',
-        14: 'Network Stress Testing'
+        12: 'Network Stress Testing'
     }
 
     half = len(menu_options) // 2

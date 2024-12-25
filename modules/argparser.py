@@ -73,4 +73,10 @@ class ArgumentParser:
             help='Perform IP Geolocation lookup. Example: -ip <IP>'
         )
 
+        parser.add_argument(
+            '-ssl', '--sslcheck',
+            type=str,
+            help="Perform an SSL certificate check for the specified domain (e.g., google.com)."
+        )
+
         return parser

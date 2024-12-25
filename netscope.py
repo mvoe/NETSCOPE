@@ -9,6 +9,7 @@ from modules.dnslookup import dns_lookup
 from modules.whois_lookup import perform_whoislookup
 from modules.reverseDNSLookUp import reverse_dns_lookup
 from modules.ipgeolocation import ip_geolocation
+from modules.sslcertificatecheck import ssl_certificate_check
 
 
 console = Console()
@@ -33,6 +34,8 @@ def main():
       reverse_dns_lookup(args.reversedns)
     elif args.ipgeolocation:
       ip_geolocation(args.ipgeolocation)
+    elif args.sslcheck:
+        ssl_certificate_check(args.sslcheck)
     else:
         print_logo()
         print_separator()
