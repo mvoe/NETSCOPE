@@ -31,5 +31,3 @@ def get_subdomain(domain):
         console.print(table)
     else:
         console.print(f"No subdomains found for {domain}.", style="bold red")
-
-
